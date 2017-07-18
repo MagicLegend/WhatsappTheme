@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Fullscreen Whatsapp & Themes
 // @namespace    http://your.homepage/
-// @version      2.1
+// @version      2.2
 // @description  Dark theme, and bg/theme selector.
 // @author       Wouter Gerarts
 // @match        https://web.whatsapp.com/
@@ -307,7 +307,7 @@ window.getColorTone = function(c, a) {
         $('head').append('<style type="text/css">.pane.pane-intro { background-color: #000 !important; }</style>');
         $('head').append('<style type="text/css">.pane-header.pane-list-header { background-color: #111 !important; }</style>');
         $('head').append('<style type="text/css">.chat-secondary { color: rgba(218, 218, 218, 0.8) !important; }</style>');//===================================ADDED LINE==============================//
-        $('head').append('<style type="text/css"> input.input-search { color: rgb(51, 51, 51) !important; }</style>');//===================================ADDED LINE==============================//
+        $('head').append('<style type="text/css"> input.input-search { color: rgb(255, 255, 255) !important; }</style>');//===================================ADDED LINE==============================//
         $('head').append('<style type="text/css"> list-search { color: rgb(51, 51, 51) !important; }</style>');//===================================ADDED LINE==============================//
         $('head').append('<style type="text/css"> button.icon { -webkit-filter: invert(1) !important; }</style>');
         $('head').append('<style type="text/css"> button.icon-search-morph { -webkit-filter: invert(0) !important; }</style>');
@@ -321,8 +321,18 @@ window.getColorTone = function(c, a) {
         $('head').append('<style type="text/css">.pane-chat-body { background: rgba(0, 0, 0, 0.3) !important; }</style>');
         $('head').append('<style type="text/css">.pane-chat-tile { background: rgba(0, 0, 0, 0.0) !important; }</style>');
         $('head').append('<style type="text/css">.pane-body.pane-chat-tile-container { background: rgba(0, 0, 0, 0.0) !important; }</style>');
-        //$('head').append('<style type="text/css">.emoji-panel-body { padding-top: 0px !important; }</style>');//===================================ADDED LINE==============================//
-
+        $('head').append('<style type="text/css">.compose-popup-panel .quoted-msg .quoted-msg-status { border-radius: 8px !important; border: 1px solid rgb(179, 35, 35) !important; }</style>');//===================================ADDED LINE==============================//
+        $('head').append('<style type="text/css">.compose-popup-panel { background-color: rgba(0, 0, 0, 0.4) !important; padding-bottom: 5px; }</style>');//===================================ADDED LINE==============================//
+        $('head').append('<style type="text/css">.btn-background { background-color: rgba(0, 0, 0, 0.1) !important; }</style>');//===================================ADDED LINE==============================//
+        $('head').append('<style type="text/css">.intro { background-color: rgba(25, 25, 25, 1) !important; }</style>');//===================================ADDED LINE==============================//
+        $('head').append('<style type="text/css">.body { background-color: rgba(25, 25, 25, 1) !important; }</style>');//===================================ADDED LINE==============================//
+        $('head').append('<style type="text/css">.empty .empty-top { background-color: rgba(25, 25, 25, 1) !important; }</style>');//===================================ADDED LINE==============================//
+        $('head').append('<style type="text/css">#startup { background-color: rgba(25, 25, 25, 1) !important; }</style>');//===================================ADDED LINE==============================//
+        $('head').append('<style type="text/css">.backdrop-transparent { background-color: rgba(25, 25, 25, 1) !important; }</style>');//===================================ADDED LINE==============================//
+        $('head').append('<style type="text/css">.popup { background-color: rgba(68, 68, 68, 1) !important; }</style>');//===================================ADDED LINE==============================//
+        $('head').append('<style type="text/css">.popup-title { color: rgba(163, 163, 163, 1) !important; }</style>');//===================================ADDED LINE==============================//
+        $('head').append('<style type="text/css">.popup-contents { color: rgba(163, 163, 163, 1); }</style>');//===================================ADDED LINE==============================//
+        
         function fixCSS() {
             try {
                 $(".app.two")

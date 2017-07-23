@@ -332,6 +332,11 @@ window.getColorTone = function(c, a) {
         $('head').append('<style type="text/css">.popup { background-color: rgba(68, 68, 68, 1) !important; }</style>');//===================================ADDED LINE==============================//
         $('head').append('<style type="text/css">.popup-title { color: rgba(163, 163, 163, 1) !important; }</style>');//===================================ADDED LINE==============================//
         $('head').append('<style type="text/css">.popup-contents { color: rgba(163, 163, 163, 1); }</style>');//===================================ADDED LINE==============================//
+                $('head').append('<style type="text/css">.media-panel-header { background-color: rgba(17, 17, 17, 1); }</style>');//===================================ADDED LINE==============================//
+        $('head').append('<style type="text/css">.media-content { background-color: rgba(17, 17, 17, 1); }</style>');//===================================ADDED LINE==============================//
+        $('head').append('<style type="text/css">.media-viewer-thumbs { background-color: rgba(17, 17, 17, 1); }</style>');//===================================ADDED LINE==============================//
+        $('head').append('<style type="text/css">.media-viewer { background-color: rgba(17, 17, 17, 1); }</style>');//===================================ADDED LINE==============================//
+        $('head').append('<style type="text/css">.media-collection { border-top: solid 1px rgba(35, 35, 35, 1); }</style>');//===================================ADDED LINE==============================//
         
         function fixCSS() {
             try {

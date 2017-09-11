@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Fullscreen Whatsapp & Themes
 // @namespace    http://your.homepage/
-// @version      2.4.1
+// @version      2.4.2
 // @description  Dark theme, and bg/theme selector.
 // @author       Wouter Gerarts
 // @match        https://web.whatsapp.com/
@@ -340,6 +340,7 @@ window.getColorTone = function(c, a) {
         $('head').append('<style type="text/css">.message-system { background-color: rgba(25, 25, 25, 0.75) !important; }</style>');//===================================ADDED LINE==============================//
         $('head').append('<style type="text/css">.message-system-body { background-color: rgba(0, 0, 0, 0) !important; }</style>');//===================================ADDED LINE==============================//
         $('head').append('<style type="text/css">.compose-box-items-overlay-container { border-left: none !important; }</style>');//===================================ADDED LINE==============================//
+        $('head').append('<style type="text/css">.backdrop.backdrop-cover { background-color: rgba(17, 17, 17, 1); !important; }</style>');//===================================ADDED LINE==============================//
         
         function fixCSS() {
             try {

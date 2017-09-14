@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Fullscreen Whatsapp & Themes
 // @namespace    http://your.homepage/
-// @version      2.4.3
+// @version      2.4.4
 // @description  Dark theme, and bg/theme selector.
 // @author       Wouter Gerarts
 // @match        https://web.whatsapp.com/
@@ -345,7 +345,7 @@ window.getColorTone = function(c, a) {
         $('head').append('<style type="text/css">.well { background-color: rgba(25, 25, 25, 1) !important; }</style>');//===================================ADDED LINE==============================//
         $('head').append('<style type="text/css">.drawer-section { background-color: rgba(25, 25, 25, 1) !important; }</style>');//===================================ADDED LINE==============================//
         $('head').append('<style type="text/css">.header-title { color: rgba(255, 255, 255, 1) !important; }</style>');//===================================ADDED LINE==============================//
-        $('head').append('<style type="text/css">.icon { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================//
+        //$('head').append('<style type="text/css">.icon { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================//
         $('head').append('<style type="text/css">.input-text { color: rgba(255, 255, 255, 1) !important; }</style>');//===================================ADDED LINE==============================//
         $('head').append('<style type="text/css">.title { color: rgba(255, 255, 255, 1) !important; }</style>');//===================================ADDED LINE==============================//
         $('head').append('<style type="text/css">.drawer { background-color: rgba(17, 17, 17, 0.7) !important; }</style>');//===================================ADDED LINE==============================//
@@ -355,6 +355,13 @@ window.getColorTone = function(c, a) {
         $('head').append('<style type="text/css">.avatar { background-color: rgba(17, 17, 17, 1) !important; }</style>');//===================================ADDED LINE==============================//
         $('head').append('<style type="text/css">.chatlist-panel-body { background-color: rgba(17, 17, 17, 1) !important; }</style>');//===================================ADDED LINE==============================//
         $('head').append('<style type="text/css">.hover { border-bottom: none !important; }</style>');//===================================ADDED LINE==============================//
+        $('head').append('<style type="text/css">.dropdown { background-color: rgba(25, 25, 25, 1) !important; }</style>');//===================================ADDED LINE==============================//
+        $('head').append('<style type="text/css">.dropdown-item-hover { background-color: rgba(17, 17, 17, 1) !important; }</style>');//===================================ADDED LINE==============================//
+        $('head').append('<style type="text/css">.dropdown-item-action { color: rgba(255, 255, 255, 0.7) !important; }</style>');//===================================ADDED LINE==============================//
+        
+        $('head').append('<style type="text/css">.icon-muted { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================//
+        $('head').append('<style type="text/css">.icon-search { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================//
+        $('head').append('<style type="text/css">.icon-x { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================//
         
         function fixCSS() {
             try {

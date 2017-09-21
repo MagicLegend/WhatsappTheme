@@ -301,7 +301,7 @@ window.getColorTone = function(c, a) {
         $('head').append('<style type="text/css">.pane-header.pane-chat-header { background-color: rgba(0, 0, 0, 0.5) !important; color: #fff !important; }</style>');
         $('head').append('<style type="text/css">.chat-title { color: #fff !important; }</style>');
         $('head').append('<style type="text/css">.chat-status { color: #aaa !important; }</style>');
-        $('head').append('<style type="text/css">.chat { background-color: #111 !important; }</style>');
+        $('head').append('<style type="text/css">.chat { background-color: #111 !important; border-bottom: 1px solid rgb(51, 51, 51); }</style>');
         $('head').append('<style type="text/css">.pane-body.pane-list-body { background-color: #333 !important; }</style>');
         $('head').append('<style type="text/css">.active.chat { border-bottom: 1px solid #333 !important; }</style>');
         $('head').append('<style type="text/css">.pane.pane-intro { background-color: #000 !important; }</style>');
@@ -315,7 +315,7 @@ window.getColorTone = function(c, a) {
         $('head').append('<style type="text/css">.cont-input-search { background-color: #333 !important; }</style>');
         $('head').append('<style type="text/css">.input.input-search { background-color: #333 !important; color: #eee !important; }</style>');
         $('head').append('<style type="text/css">.list-title { background-color: #000 !important; font-weight: bold !important; }</style>');
-        $('head').append('<style type="text/css">.active.chat { background-color: rgb(35, 35, 35) !important; }</style>');
+        //$('head').append('<style type="text/css">.active.chat { background-color: rgb(35, 35, 35) !important; }</style>');
         $('head').append('<style type="text/css">.hover.chat { background-color: rgb(17, 35, 35) !important; }</style>');
         $('head').append('<style type="text/css">.icon.icon-down.btn-context { -webkit-filter: invert(1) !important; }</style>');
         $('head').append('<style type="text/css">.pane-chat-body { background: rgba(0, 0, 0, 0.3) !important; }</style>');
@@ -340,7 +340,7 @@ window.getColorTone = function(c, a) {
         $('head').append('<style type="text/css">.message-system { background-color: rgba(25, 25, 25, 0.75) !important; }</style>');//===================================ADDED LINE==============================//
         $('head').append('<style type="text/css">.message-system-body { background-color: rgba(0, 0, 0, 0) !important; }</style>');//===================================ADDED LINE==============================//
         $('head').append('<style type="text/css">.compose-box-items-overlay-container { border-left: none !important; }</style>');//===================================ADDED LINE==============================//
-        $('head').append('<style type="text/css">.backdrop.backdrop-cover { background-color: rgba(17, 17, 17, 1); !important; }</style>');//===================================ADDED LINE==============================//
+        $('head').append('<style type="text/css">.backdrop.backdrop-cover { background-color: rgba(17, 17, 17, 1) !important; }</style>');//===================================ADDED LINE==============================//
         $('head').append('<style type="text/css">.pane-header { background-color: rgba(17, 17, 17, 1) !important; }</style>');//===================================ADDED LINE==============================//
         $('head').append('<style type="text/css">.well { background-color: rgba(25, 25, 25, 1) !important; }</style>');//===================================ADDED LINE==============================//
         $('head').append('<style type="text/css">.drawer-section { background-color: rgba(25, 25, 25, 1) !important; }</style>');//===================================ADDED LINE==============================//
@@ -354,14 +354,16 @@ window.getColorTone = function(c, a) {
         $('head').append('<style type="text/css">.chatlist { background-color: rgba(17, 17, 17, 0.7) !important; }</style>');//===================================ADDED LINE==============================//
         $('head').append('<style type="text/css">.avatar { background-color: rgba(17, 17, 17, 1) !important; }</style>');//===================================ADDED LINE==============================//
         $('head').append('<style type="text/css">.chatlist-panel-body { background-color: rgba(17, 17, 17, 1) !important; }</style>');//===================================ADDED LINE==============================//
-        $('head').append('<style type="text/css">.hover { border-bottom: none !important; }</style>');//===================================ADDED LINE==============================//
+        $('head').append('<style type="text/css">.hover { border-bottom: orange !important; }</style>');//===================================ADDED LINE==============================//
         $('head').append('<style type="text/css">.dropdown { background-color: rgba(25, 25, 25, 1) !important; }</style>');//===================================ADDED LINE==============================//
         $('head').append('<style type="text/css">.dropdown-item-hover { background-color: rgba(17, 17, 17, 1) !important; }</style>');//===================================ADDED LINE==============================//
         $('head').append('<style type="text/css">.dropdown-item-action { color: rgba(255, 255, 255, 0.7) !important; }</style>');//===================================ADDED LINE==============================//
+        $('head').append('<style type="text/css">.backdrop { background-color: rgba(17, 17, 17, 0.7) !important; }</style>');//===================================ADDED LINE==============================//
         
         $('head').append('<style type="text/css">.icon-muted { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================//
         $('head').append('<style type="text/css">.icon-search { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================//
         $('head').append('<style type="text/css">.icon-x { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================//
+        
         
         function fixCSS() {
             try {

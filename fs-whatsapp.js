@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Fullscreen Whatsapp & Themes
 // @namespace    http://your.homepage/
-// @version      2.4.4
+// @version      2.4.5
 // @description  Dark theme, and bg/theme selector.
 // @author       Wouter Gerarts
 // @match        https://web.whatsapp.com/
@@ -267,7 +267,7 @@ window.getColorTone = function(c, a) {
                 $('.theme-select-window').addClass('theme-select-window-active');
             }
         };
- 
+
         window.awaitAppendMenus($);
 
         window.applyThemeColorChanges();
@@ -279,7 +279,7 @@ window.getColorTone = function(c, a) {
         $('head').append('<style type="text/css">.theme-selected { margin: 0px !important; border: 10px solid rgb(50, 180, 255) !important; }</style>');
         $('head').append('<style type="text/css">.icon-status-check { -webkit-filter: invert(1) !important; }</style>');
         $('head').append('<style type="text/css">.icon-status-dblcheck { -webkit-filter: invert(1) !important; }</style>');
-        $('head').append('<style type="text/css">.chat:after{border-bottom: 1px solid #333 !important; left: 0px !important; width: 100% !important;}</style>');
+        $('head').append('<style type="text/css">.chat:after{border-bottom: 1px solid #333 !important; left: 0px !important; width: 100% !important; border-top: 1px solid #333 !important}</style>');
         $('head').append('<style type="text/css">.message-in:before{opacity:0.0 !important;} .message-out:before{opacity:0.0 !important;}</style>');
         $('head').append('<style type="text/css">.app.two { left: 0px !important; top: 0px !important; width: 100% !important; height: 100% !important; }</style>');
         $('head').append('<style type="text/css">.pane.pane-intro { width: inherit !important; }</style>');
@@ -359,12 +359,18 @@ window.getColorTone = function(c, a) {
         $('head').append('<style type="text/css">.dropdown-item-hover { background-color: rgba(17, 17, 17, 1) !important; }</style>');//===================================ADDED LINE==============================//
         $('head').append('<style type="text/css">.dropdown-item-action { color: rgba(255, 255, 255, 0.7) !important; }</style>');//===================================ADDED LINE==============================//
         $('head').append('<style type="text/css">.backdrop { background-color: rgba(17, 17, 17, 0.7) !important; }</style>');//===================================ADDED LINE==============================//
-        
+        $('head').append('<style type="text/css">.chat-body { border-top: none !important; }</style>');//===================================ADDED LINE==============================//
+        $('head').append('<style type="text/css">.chat-body { border-top: none !important; }</style>');//===================================ADDED LINE==============================//
+        //$('head').append('<style type="text/css">.pane-two { background-color: rgba(35, 35, 35, 1) !important; }</style>');//===================================ADDED LINE==============================//
+        $('head').append('<style type="text/css">._1DZAH { color: rgba(255, 0, 0, 0.7) !important; }</style>');//===================================ADDED LINE==============================// MAY BREAK! (timestamp color)
+        $('head').append('<style type="text/css">._1i1U7 { background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(84, 19, 19, 0.5)) !important; }</style>');//===================================ADDED LINE==============================// MAY BREAK! (chat item hover gradient)
+
         $('head').append('<style type="text/css">.icon-muted { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================//
         $('head').append('<style type="text/css">.icon-search { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================//
         $('head').append('<style type="text/css">.icon-x { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================//
-        
-        
+        $('head').append('<style type="text/css">.down-context { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================//
+
+
         function fixCSS() {
             try {
                 $(".app.two")
@@ -417,7 +423,7 @@ window.getColorTone = function(c, a) {
             try { $(".list-title").css('background-color', '#000').css('font-weight', 'bold'); } catch (k) { }
             try { $(".chat-time").css('color', 'rgb(0, 255, 200)'); } catch (k) { }
             try { $(".cont-input-search").css('border', '2px solid #0a6'); } catch (k) { }
-            try { $(".active.chat").css('background-color', 'rgb(35, 35, 35)'); } catch (k) { }
+            try { $(".active.chat").css('background-color', 'rgb(17, 35, 35)'); } catch (k) { }
             try { $(".hover.chat").css('background-color', 'rgb(17, 35, 35)'); } catch (k) { }
             try { $(".icon.icon-down.btn-context").css('-webkit-filter', 'invert(1)'); } catch (k) { }
             try { $('.pane-chat-tile').css('background', 'rgba(0, 0, 0, 0)'); } catch (k) { }

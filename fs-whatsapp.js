@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Fullscreen Whatsapp & Themes
 // @namespace    http://your.homepage/
-// @version      2.4.6
+// @version      2.5
 // @description  Dark theme, and bg/theme selector.
 // @author       Wouter Gerarts
 // @match        https://web.whatsapp.com/
@@ -390,6 +390,7 @@ window.getColorTone = function(c, a) {
         $('head').append('<style type="text/css">.compose-btn-emoji { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================// Emoji button
         $('head').append('<style type="text/css">.rAUz7 { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================// Top-left buttons
         $('head').append('<style type="text/css">._3cyFx { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================// Profile edit buttons
+        $('head').append('<style type="text/css">.drawer-title-action { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================// Contact close button
 
 
         function fixCSS() {

@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Fullscreen Whatsapp & Themes
 // @namespace    http://your.homepage/
-// @version      2.4.5
+// @version      2.4.6
 // @description  Dark theme, and bg/theme selector.
 // @author       Wouter Gerarts
 // @match        https://web.whatsapp.com/
@@ -364,11 +364,32 @@ window.getColorTone = function(c, a) {
         //$('head').append('<style type="text/css">.pane-two { background-color: rgba(35, 35, 35, 1) !important; }</style>');//===================================ADDED LINE==============================//
         $('head').append('<style type="text/css">._1DZAH { color: rgba(255, 0, 0, 0.7) !important; }</style>');//===================================ADDED LINE==============================// MAY BREAK! (timestamp color)
         $('head').append('<style type="text/css">._1i1U7 { background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(84, 19, 19, 0.5)) !important; }</style>');//===================================ADDED LINE==============================// MAY BREAK! (chat item hover gradient)
+        $('head').append('<style type="text/css">.drawer-header-small { background-color: rgba(35, 35, 35, 0.7) !important; }</style>');//===================================ADDED LINE==============================// Contact info drawer header background
+        $('head').append('<style type="text/css">._1CRb5 { background-color: rgba(25, 25, 25, 1) !important; }</style>');//===================================ADDED LINE==============================// Contact info div background color
+        $('head').append('<style type="text/css">.drawer-title { color: rgba(255, 255, 255, 1) !important; }</style>');//===================================ADDED LINE==============================// Contact info drawer header text color
+        $('head').append('<style type="text/css">.iYPsH { color: rgba(240, 240, 240, 1) !important; }</style>');//===================================ADDED LINE==============================// Contact info text color
+        $('head').append('<style type="text/css">._3LL06 { color: rgba(240, 240, 240, 1) !important; }</style>');//===================================ADDED LINE==============================// Contact info text color
+        $('head').append('<style type="text/css">.DcItJ { border-top: none !important; }</style>');//===================================ADDED LINE==============================// Border on the contact info buttons
+        $('head').append('<style type="text/css">._1CkkN { background-color: rgba(25, 25, 25, 1) !important; }</style>');//===================================ADDED LINE==============================// Contact info button background
+        $('head').append('<style type="text/css">._2uLFU { background-color: rgba(25, 25, 25, 1) !important; }</style>');//===================================ADDED LINE==============================// Dropdown menu background
+        $('head').append('<style type="text/css">._2dGjP { color: rgba(240, 240, 240, 1) !important; }</style>');//===================================ADDED LINE==============================// Dropdown menu text color
+        $('head').append('<style type="text/css">._3qlW9 { background-color: rgba(35, 35, 35, 1) !important; }</style>');//===================================ADDED LINE==============================// Initial 'remain connected' background
+        $('head').append('<style type="text/css">.iHhHL { color: rgba(240, 240, 240, 1) !important; }</style>');//===================================ADDED LINE==============================// Initial 'remain connected' text color
+        $('head').append('<style type="text/css">._1ClcF { color: rgba(150, 150, 150, 1) !important; }</style>');//===================================ADDED LINE==============================//
+        $('head').append('<style type="text/css">._2sNbV { background-color: rgba(25, 25, 25, 1) !important; }</style>');//===================================ADDED LINE==============================// Profile background
+        $('head').append('<style type="text/css">.selectable-text { color: rgba(240, 240, 240, 1) !important; }</style>');//===================================ADDED LINE==============================// Profile input text
+        $('head').append('<style type="text/css">._1AKfk { background-color: rgba(35, 35, 35, 1) !important; }</style>');//===================================ADDED LINE==============================// New chat dividers
+
 
         $('head').append('<style type="text/css">.icon-muted { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================//
         $('head').append('<style type="text/css">.icon-search { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================//
         $('head').append('<style type="text/css">.icon-x { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================//
         $('head').append('<style type="text/css">.down-context { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================//
+        $('head').append('<style type="text/css">.rrzlm { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================// Contact info 'block contact' icon color invert
+        $('head').append('<style type="text/css">._2SbJ1 { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================// Message send button
+        $('head').append('<style type="text/css">.compose-btn-emoji { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================// Emoji button
+        $('head').append('<style type="text/css">.rAUz7 { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================// Top-left buttons
+        $('head').append('<style type="text/css">._3cyFx { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================// Profile edit buttons
 
 
         function fixCSS() {

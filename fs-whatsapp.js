@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Fullscreen Whatsapp & Themes
 // @namespace    http://your.homepage/
-// @version      2.5
+// @version      2.5.2
 // @description  Dark theme, and bg/theme selector.
 // @author       Wouter Gerarts
 // @match        https://web.whatsapp.com/
@@ -379,8 +379,17 @@ window.getColorTone = function(c, a) {
         $('head').append('<style type="text/css">._2sNbV { background-color: rgba(25, 25, 25, 1) !important; }</style>');//===================================ADDED LINE==============================// Profile background
         $('head').append('<style type="text/css">.selectable-text { color: rgba(240, 240, 240, 1) !important; }</style>');//===================================ADDED LINE==============================// Profile input text
         $('head').append('<style type="text/css">._1AKfk { background-color: rgba(35, 35, 35, 1) !important; }</style>');//===================================ADDED LINE==============================// New chat dividers
+        $('head').append('<style type="text/css">._1Iexl { width: 100% !important; }</style>');//===================================ADDED LINE==============================// Fixes chat width
+        $('head').append('<style type="text/css">.chatlist-panel-search { background-color: rgba(35, 35, 35, 1) !important; }</style>');//===================================ADDED LINE==============================// Search bar background
+        $('head').append('<style type="text/css">._2MSJr { background-color: rgba(25, 25, 25, 1) !important; border: 1px solid #02d1a4 !important; }</style>');//===================================ADDED LINE==============================// Search bar background
+        $('head').append('<style type="text/css">#input-chatlist-search { background-color: rgba(25, 25, 25, 1) !important; }</style>');//===================================ADDED LINE==============================// Search bar background
+        $('head').append('<style type="text/css">.quoted-mention { color: rgba(140, 140, 140, 1) !important; }</style>');//===================================ADDED LINE==============================// Quote text color
+        $('head').append('<style type="text/css">.compose-popup-panel { border: solid 1px rgba(179, 35, 35, 1) !important; }</style>');//===================================ADDED LINE==============================// Quote bar border
+        $('head').append('<style type="text/css">._27BA_ { background-color: rgba(0, 0, 0, 0.25) !important; }</style>');//===================================ADDED LINE==============================// Quote bar background
 
 
+        //Wapp green: #09d261
+        //Wapp light green: #02d1a4
         $('head').append('<style type="text/css">.icon-muted { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================//
         $('head').append('<style type="text/css">.icon-search { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================//
         $('head').append('<style type="text/css">.icon-x { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================//

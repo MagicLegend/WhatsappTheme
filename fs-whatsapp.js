@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Fullscreen Whatsapp & Themes
 // @namespace    http://your.homepage/
-// @version      2.5.2
+// @version      2.5.3
 // @description  Dark theme, and bg/theme selector.
 // @author       Wouter Gerarts
 // @match        https://web.whatsapp.com/
@@ -386,7 +386,8 @@ window.getColorTone = function(c, a) {
         $('head').append('<style type="text/css">.quoted-mention { color: rgba(140, 140, 140, 1) !important; }</style>');//===================================ADDED LINE==============================// Quote text color
         $('head').append('<style type="text/css">.compose-popup-panel { border: solid 1px rgba(179, 35, 35, 1) !important; }</style>');//===================================ADDED LINE==============================// Quote bar border
         $('head').append('<style type="text/css">._27BA_ { background-color: rgba(0, 0, 0, 0.25) !important; }</style>');//===================================ADDED LINE==============================// Quote bar background
-
+        $('head').append('<style type="text/css">.emoji-search-row-input { display: none !important; }</style>');//===================================ADDED LINE==============================// Removing the search bar for emojis
+        $('head').append('<style type="text/css">.emoji-panel-body { padding-top: 15px !important; }</style>');//===================================ADDED LINE==============================// Quote bar background
 
         //Wapp green: #09d261
         //Wapp light green: #02d1a4

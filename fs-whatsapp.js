@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Fullscreen Whatsapp & Themes
 // @namespace    http://your.homepage/
-// @version      2.5.3
+// @version      2.5.4
 // @description  Dark theme, and bg/theme selector.
 // @author       Wouter Gerarts
 // @match        https://web.whatsapp.com/
@@ -252,9 +252,16 @@ window.getColorTone = function(c, a) {
             $('.changes-with-theme').remove();
             $('head').append('<style class="changes-with-theme" type="text/css">*::-webkit-scrollbar-thumb { background:' + window.getColorTone(0.3, false) + ' }  *::-webkit-scrollbar-track{background:' + window.getColorTone(1, 0.7) + ' !important;}</style>');
             $('head').append('<style class="changes-with-theme" type="text/css">#main { width: inherit !important; background-image: url(' + window.__selected_background[0] + ') !important; background-size: cover; background-position: center; }</style>');
+            //Broken
             $('head').append('<style class="changes-with-theme" type="text/css">.bubble.bubble-attach { background: rgba(0, 0, 0, 0.6) !important; color: #fff !important; border-radius: 8px !important; border: 1px solid ' + window.getColorTone(0.7, false) + ' !important; }</style>');
             $('head').append('<style class="changes-with-theme" type="text/css">.bubble.bubble-text { border-radius: 8px !important; border: 1px solid ' + window.getColorTone(0.7, false) + ' !important; }</style>');
             $('head').append('<style class="changes-with-theme" type="text/css">.bubble-image { border-radius: 8px !important; border: 1px solid ' + window.getColorTone(0.7, false) + ' !important; background-color: rgba(0, 0, 0, 0.6) !important; }</style>');
+            
+            //Fixed
+            $('head').append('<style class="changes-with-theme" type="text/css">.Tkt2p { background: rgba(0, 0, 0, 0.6) !important; color: #fff !important; border-radius: 8px !important; border: 1px solid ' + window.getColorTone(0.7, false) + ' !important; }</style>');
+            $('head').append('<style class="changes-with-theme" type="text/css">.Tkt2p { border-radius: 8px !important; border: 1px solid ' + window.getColorTone(0.7, false) + ' !important; }</style>');
+            $('head').append('<style class="changes-with-theme" type="text/css">.Tkt2p { border-radius: 8px !important; border: 1px solid ' + window.getColorTone(0.7, false) + ' !important; background-color: rgba(0, 0, 0, 0.6) !important; }</style>');
+
             $('head').append('<style class="changes-with-theme" type="text/css">.message-datetime { color: ' + window.getColorTone(1.25, false) + ' !important; }</style>');
             $('head').append('<style class="changes-with-theme" type="text/css">.chat-time { color: ' + window.getColorTone(1.25, false) + ' !important; }</style>');
             $('head').append('<style class="changes-with-theme" type="text/css">.cont-input-search { border: 2px solid ' + window.getColorTone(0.8, false) + ' !important; }</style>');

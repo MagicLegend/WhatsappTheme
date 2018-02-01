@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Fullscreen Whatsapp & Themes
 // @namespace    http://your.homepage/
-// @version      2.5.6
+// @version      2.5.7
 // @description  Dark theme, and bg/theme selector.
 // @author       Wouter Gerarts
 // @match        https://web.whatsapp.com/
@@ -260,6 +260,10 @@ window.getColorTone = function(c, a) {
             $('head').append('<style class="changes-with-theme" type="text/css">.Tkt2p { background: rgba(0, 0, 0, 0.6) !important; color: #fff !important; border-radius: 8px !important; border: 1px solid ' + window.getColorTone(0.7, false) + ' !important; }</style>');
             $('head').append('<style class="changes-with-theme" type="text/css">.Tkt2p { border-radius: 8px !important; border: 1px solid ' + window.getColorTone(0.7, false) + ' !important; }</style>');
             $('head').append('<style class="changes-with-theme" type="text/css">.KYpDv { border-radius: 8px !important; border: 1px solid ' + window.getColorTone(0.7, false) + ' !important; background-color: rgba(0, 0, 0, 0.6) !important; }</style>');
+
+            //Fixes gif messages
+            $('head').append('<style class="changes-with-theme" type="text/css">._1umJf { background: rgba(0, 0, 0, 0.6) !important; color: #fff !important; border-radius: 8px !important; border: 1px solid ' + window.getColorTone(0.7, false) + ' !important; }</style>');
+            $('head').append('<style class="changes-with-theme" type="text/css">._1umJf { border-radius: 8px !important; border: 1px solid ' + window.getColorTone(0.7, false) + ' !important; }</style>');
 
             $('head').append('<style class="changes-with-theme" type="text/css">.message-datetime { color: ' + window.getColorTone(1.25, false) + ' !important; }</style>');
             $('head').append('<style class="changes-with-theme" type="text/css">.chat-time { color: ' + window.getColorTone(1.25, false) + ' !important; }</style>');

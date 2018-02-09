@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Fullscreen Whatsapp & Themes
 // @namespace    http://your.homepage/
-// @version      2.5.7
+// @version      2.6
 // @description  Dark theme, and bg/theme selector.
 // @author       Wouter Gerarts
 // @match        https://web.whatsapp.com/
@@ -261,7 +261,6 @@ window.getColorTone = function(c, a) {
             $('head').append('<style class="changes-with-theme" type="text/css">.Tkt2p { border-radius: 8px !important; border: 1px solid ' + window.getColorTone(0.7, false) + ' !important; }</style>');
             $('head').append('<style class="changes-with-theme" type="text/css">.KYpDv { border-radius: 8px !important; border: 1px solid ' + window.getColorTone(0.7, false) + ' !important; background-color: rgba(0, 0, 0, 0.6) !important; }</style>');
 
-            //Fixes gif messages
             $('head').append('<style class="changes-with-theme" type="text/css">._1umJf { background: rgba(0, 0, 0, 0.6) !important; color: #fff !important; border-radius: 8px !important; border: 1px solid ' + window.getColorTone(0.7, false) + ' !important; }</style>');
             $('head').append('<style class="changes-with-theme" type="text/css">._1umJf { border-radius: 8px !important; border: 1px solid ' + window.getColorTone(0.7, false) + ' !important; }</style>');
 
@@ -412,7 +411,38 @@ window.getColorTone = function(c, a) {
         $('head').append('<style type="text/css">.rAUz7 { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================// Top-left buttons
         $('head').append('<style type="text/css">._3cyFx { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================// Profile edit buttons
         $('head').append('<style type="text/css">.drawer-title-action { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================// Contact close button
+        $('head').append('<style type="text/css">._2Fofa { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================// Emoji emoticon (input bar)
 
+        // rgba(25, 25, 25, 1) Dark gray
+        // rgba(35, 35, 35, 1) Lighter gray
+        // rgba(179, 35, 35, 1) Red
+
+        //Coloring (09/02/18)
+        $('head').append('<style type="text/css">._3auIg { background-color: rgba(25, 25, 25, 1) !important; }</style>');//===================================ADDED LINE==============================// Left header (under profile picture)
+        $('head').append('<style type="text/css">.gQzdc { background-color: rgba(35, 35, 35, 1) !important; }</style>');//===================================ADDED LINE==============================// Background under search bar
+        $('head').append('<style type="text/css">._2EXPL { background-color: rgba(25, 25, 25, 1) !important; }</style>');//===================================ADDED LINE==============================// Background under chat list
+        //$('head').append('<style type="text/css">._25Ooe { color: rgba(225, 225, 225, 1) !important; }</style>');//===================================ADDED LINE==============================// Chat in scrollbar name header
+        $('head').append('<style type="text/css">._1wjpf { color: rgba(225, 225, 225, 1) !important; }</style>');//===================================ADDED LINE==============================// Chat preview text
+        $('head').append('<style type="text/css">._1wjpf._3NFp9 { color: rgba(180, 180, 180, 1) !important; }</style>');//===================================ADDED LINE==============================// Chat preview header
+        $('head').append('<style type="text/css">._3T2VG { color: rgba(179, 35, 35, 1) !important; }</style>');//===================================ADDED LINE==============================// Chat time
+        $('head').append('<style type="text/css">._1bX-5 { color: rgba(179, 35, 35, 1) !important; }</style>');//===================================ADDED LINE==============================// Chat user
+        $('head').append('<style type="text/css">._3j7s9 { border-top: 1px solid rgba(35, 35, 35, 1) !important; }</style>');//===================================ADDED LINE==============================// Chat seperator
+        $('head').append('<style type="text/css">._1NrpZ { background-color: rgba(35, 35, 35, 1) !important; }</style>');//===================================ADDED LINE==============================// Background color of the scroll bar
+        $('head').append('<style type="text/css">._3AwwN { background-color: rgba(35, 35, 35, 1) !important; }</style>');//===================================ADDED LINE==============================// Chat header
+        $('head').append('<style type="text/css">._3oju3 { background-color: rgba(35, 35, 35, 1) !important; }</style>');//===================================ADDED LINE==============================// Background under input bar
+        $('head').append('<style type="text/css">._2bXVy { background-color: rgba(45, 45, 45, 1) !important; }</style>');//===================================ADDED LINE==============================// Input bar background color
+        $('head').append('<style type="text/css">._1f1zm:after { border-top-color: rgba(45, 45, 45, 1) !important; }</style>');//===================================ADDED LINE==============================// Chat seperator (when selected)
+        $('head').append('<style type="text/css">._2jVLL { background-color: rgba(35, 35, 35, 1) !important; }</style>');//===================================ADDED LINE==============================//
+        $('head').append('<style type="text/css">.O90ur { color: rgba(180, 180, 180, 1) !important; }</style>');//===================================ADDED LINE==============================// Last seen text color
+        $('head').append('<style type="text/css">._1qdni { background-color: rgba(45, 45, 45, 1) !important; }</style>');//===================================ADDED LINE==============================// Emoji header/selector bar background color
+
+        //Other changes
+        $('head').append('<style type="text/css">.msg { padding-left: 6% !important; padding-right: 6% !important; }</style>');//===================================ADDED LINE==============================// Changes padding of the messages
+        $('head').append('<style type="text/css">.k1feT { flex-basis: 25% !important; }</style>');//===================================ADDED LINE==============================// Changes the scaling of the chat itself and the scollbar
+        $('head').append('<style type="text/css">._1Iexl { flex-basis: 75% !important; }</style>');//===================================ADDED LINE==============================// Changes the scaling of the chat itself and the scollbar
+        $('head').append('<style type="text/css">._1Iexl { width: 100% !important; }</style>');//===================================ADDED LINE==============================// Fixes chat width
+        $('head').append('<style type="text/css">.GRELm { display: none !important; }</style>');//===================================ADDED LINE==============================// Removes emoticon searchbar
+        $('head').append('<style type="text/css">._1pJVs { padding-top: 6px !important; }</style>');//===================================ADDED LINE==============================// Fixes padding caused by the removal of the searchbar
 
         function fixCSS() {
             try {

@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Fullscreen Whatsapp & Themes
 // @namespace    http://your.homepage/
-// @version      2.6
+// @version      2.6.5
 // @description  Dark theme, and bg/theme selector.
 // @author       Wouter Gerarts
 // @match        https://web.whatsapp.com/
@@ -412,9 +412,11 @@ window.getColorTone = function(c, a) {
         $('head').append('<style type="text/css">._3cyFx { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================// Profile edit buttons
         $('head').append('<style type="text/css">.drawer-title-action { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================// Contact close button
         $('head').append('<style type="text/css">._2Fofa { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================// Emoji emoticon (input bar)
+        $('head').append('<style type="text/css">._3PiNI { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================// Quote bar X
 
         // rgba(25, 25, 25, 1) Dark gray
         // rgba(35, 35, 35, 1) Lighter gray
+        // rgba(45, 45, 45, 1) Even lighter gray
         // rgba(179, 35, 35, 1) Red
 
         //Coloring (09/02/18)
@@ -435,6 +437,10 @@ window.getColorTone = function(c, a) {
         $('head').append('<style type="text/css">._2jVLL { background-color: rgba(35, 35, 35, 1) !important; }</style>');//===================================ADDED LINE==============================//
         $('head').append('<style type="text/css">.O90ur { color: rgba(180, 180, 180, 1) !important; }</style>');//===================================ADDED LINE==============================// Last seen text color
         $('head').append('<style type="text/css">._1qdni { background-color: rgba(45, 45, 45, 1) !important; }</style>');//===================================ADDED LINE==============================// Emoji header/selector bar background color
+        $('head').append('<style type="text/css">._2EYZY { background-color: rgba(45, 45, 45, 1) !important; }</style>');//===================================ADDED LINE==============================// Quote bar background
+        $('head').append('<style type="text/css">._2EYZY { padding-bottom: 5px !important; }</style>');//===================================ADDED LINE==============================// Quote bar
+        $('head').append('<style type="text/css">._1fkhx { border-left: none !important; }</style>');//===================================ADDED LINE==============================// Quote bar left border
+        $('head').append('<style type="text/css">._27BA_ { border-radius: 5px !important; }</style>');//===================================ADDED LINE==============================// Quote bar rounded corners
 
         //Other changes
         $('head').append('<style type="text/css">.msg { padding-left: 6% !important; padding-right: 6% !important; }</style>');//===================================ADDED LINE==============================// Changes padding of the messages

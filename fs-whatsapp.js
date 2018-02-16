@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Fullscreen Whatsapp & Themes
 // @namespace    http://your.homepage/
-// @version      2.6.5
+// @version      2.6.6
 // @description  Dark theme, and bg/theme selector.
 // @author       Wouter Gerarts
 // @match        https://web.whatsapp.com/
@@ -399,7 +399,7 @@ window.getColorTone = function(c, a) {
         $('head').append('<style type="text/css">.emoji-panel-body { padding-top: 15px !important; }</style>');//===================================ADDED LINE==============================// Quote bar background
         $('head').append('<style type="text/css">.pluggable-input-body.copyable-text.selectable-text { font-size: 16px !important; }</style>');//===================================ADDED LINE==============================// Text size
 
-        //Wapp green: #09d261
+        //Wapp green: #09d261 / rgba(9, 210, 97, 1)
         //Wapp light green: #02d1a4
         $('head').append('<style type="text/css">.icon-muted { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================//
         $('head').append('<style type="text/css">.icon-search { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================//
@@ -441,6 +441,7 @@ window.getColorTone = function(c, a) {
         $('head').append('<style type="text/css">._2EYZY { padding-bottom: 5px !important; }</style>');//===================================ADDED LINE==============================// Quote bar
         $('head').append('<style type="text/css">._1fkhx { border-left: none !important; }</style>');//===================================ADDED LINE==============================// Quote bar left border
         $('head').append('<style type="text/css">._27BA_ { border-radius: 5px !important; }</style>');//===================================ADDED LINE==============================// Quote bar rounded corners
+        $('head').append('<style type="text/css">.vdXUe { color: rgba(9, 210, 97, 1) !important; }</style>');//===================================ADDED LINE==============================// "Typing..." text color
 
         //Other changes
         $('head').append('<style type="text/css">.msg { padding-left: 6% !important; padding-right: 6% !important; }</style>');//===================================ADDED LINE==============================// Changes padding of the messages

@@ -9,3 +9,4 @@ Todo:
 - Right click dropdown menu hover color
 - Group information header background color
 - Three dots (left top) dropdown background color
+- Phone can't connect screen

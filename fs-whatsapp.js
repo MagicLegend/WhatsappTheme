@@ -1,10 +1,12 @@
 // ==UserScript==
 // @name         Fullscreen Whatsapp & Themes
 // @namespace    http://your.homepage/
-// @version      2.6.7
+// @version      2.7.0
 // @description  Dark theme, and bg/theme selector.
 // @author       Wouter Gerarts
 // @match        https://web.whatsapp.com/
+// @updateURL    https://github.com/MagicLegend/WhatsappTheme
+// @downloadURL  https://raw.githubusercontent.com/MagicLegend/WhatsappTheme/master/fs-whatsapp.js
 // @grant        none
 // ==/UserScript==
 

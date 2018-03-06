@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Fullscreen Whatsapp & Themes
 // @namespace    http://your.homepage/
-// @version      2.6.6
+// @version      2.6.7
 // @description  Dark theme, and bg/theme selector.
 // @author       Wouter Gerarts
 // @match        https://web.whatsapp.com/
@@ -413,11 +413,14 @@ window.getColorTone = function(c, a) {
         $('head').append('<style type="text/css">.drawer-title-action { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================// Contact close button
         $('head').append('<style type="text/css">._2Fofa { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================// Emoji emoticon (input bar)
         $('head').append('<style type="text/css">._3PiNI { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================// Quote bar X
+        $('head').append('<style type="text/css">._1aTxu { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================// Message information close X
+        $('head').append('<style type="text/css">._16yFM { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================// Profile picture viewer X
 
         // rgba(25, 25, 25, 1) Dark gray
         // rgba(35, 35, 35, 1) Lighter gray
         // rgba(45, 45, 45, 1) Even lighter gray
         // rgba(179, 35, 35, 1) Red
+        // rgba(240, 240, 240, 1) White text color
 
         //Coloring (09/02/18)
         $('head').append('<style type="text/css">._3auIg { background-color: rgba(25, 25, 25, 1) !important; }</style>');//===================================ADDED LINE==============================// Left header (under profile picture)
@@ -442,6 +445,18 @@ window.getColorTone = function(c, a) {
         $('head').append('<style type="text/css">._1fkhx { border-left: none !important; }</style>');//===================================ADDED LINE==============================// Quote bar left border
         $('head').append('<style type="text/css">._27BA_ { border-radius: 5px !important; }</style>');//===================================ADDED LINE==============================// Quote bar rounded corners
         $('head').append('<style type="text/css">.vdXUe { color: rgba(9, 210, 97, 1) !important; }</style>');//===================================ADDED LINE==============================// "Typing..." text color
+        $('head').append('<style type="text/css">._1CSx9 { background-color: rgba(25, 25, 25, 1) !important; }</style>');//===================================ADDED LINE==============================// Group information header background
+        $('head').append('<style type="text/css">._2xOyO { background-color: rgba(35, 35, 35, 0.95) !important; }</style>');//===================================ADDED LINE==============================// Picture background
+        $('head').append('<style type="text/css">._1XwnX { background-color: rgba(35, 35, 35, 1) !important; }</style>');//===================================ADDED LINE==============================// Picture header
+        $('head').append('<style type="text/css">._2JD5b { background-color: rgba(35, 35, 35, 1) !important; }</style>');//===================================ADDED LINE==============================// Picture footer
+        $('head').append('<style type="text/css">._itD1 { color: #09d261 !important; }</style>');//===================================ADDED LINE==============================// Read by text color (groups)
+        $('head').append('<style type="text/css">.Um7sh { background-color: rgba(35, 35, 35, 1) !important; }</style>');//===================================ADDED LINE==============================// Read by footer
+        $('head').append('<style type="text/css">._2flas { background-color: rgba(35, 35, 35, 1) !important; }</style>');//===================================ADDED LINE==============================// Read by header
+        $('head').append('<style type="text/css">._1xGbt { background-color: rgba(25, 25, 25, 1) !important; color: rgba(240, 240, 240, 1) !important; }</style>');//===================================ADDED LINE==============================// Message information header
+        $('head').append('<style type="text/css">._1zcz2 { background-color: rgba(35, 35, 35, 0.95) !important; }</style>');//===================================ADDED LINE==============================// Profile picture open background
+        $('head').append('<style type="text/css">._25Ooe { color: rgba(240, 240, 240, 1) !important; }</style>');//===================================ADDED LINE==============================// Profile picture open name text color
+        $('head').append('<style type="text/css">._2YdsD { background-color: rgba(25, 25, 25, 1) !important; }</style>');//===================================ADDED LINE==============================// Profile picture open header background
+        //$('head').append('<style type="text/css">._2YdsD { background-color: rgba(25, 25, 25, 1) !important; }</style>');//===================================ADDED LINE==============================//
 
         //Other changes
         $('head').append('<style type="text/css">.msg { padding-left: 6% !important; padding-right: 6% !important; }</style>');//===================================ADDED LINE==============================// Changes padding of the messages

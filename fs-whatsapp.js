@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Fullscreen Whatsapp & Themes
 // @namespace    http://your.homepage/
-// @version      2.7.1
+// @version      2.7.2
 // @description  Dark theme, and bg/theme selector.
 // @author       Wouter Gerarts
 // @match        https://web.whatsapp.com/
@@ -458,9 +458,9 @@ window.getColorTone = function(c, a) {
         $('head').append('<style type="text/css">._1zcz2 { background-color: rgba(35, 35, 35, 0.95) !important; }</style>');//===================================ADDED LINE==============================// Profile picture open background
         $('head').append('<style type="text/css">._25Ooe { color: rgba(240, 240, 240, 1) !important; }</style>');//===================================ADDED LINE==============================// Profile picture open name text color
         $('head').append('<style type="text/css">._2YdsD { background-color: rgba(25, 25, 25, 1) !important; }</style>');//===================================ADDED LINE==============================// Profile picture open header background
-        $('head').append('<style type="text/css">.message-in { background-color: none !important; }</style>');//===================================ADDED LINE==============================// Removing fade color over chat messages
-        $('head').append('<style type="text/css">.message-out { background-color: none !important; }</style>');//===================================ADDED LINE==============================// Removing fade color over chat messages
-        $('head').append('<style type="text/css">.tail { background-color: none !important; }</style>');//===================================ADDED LINE==============================// Removing fade color when a message is quoted
+        $('head').append('<style type="text/css">.message-in { background-color: transparent !important; }</style>');//===================================ADDED LINE==============================// Removing fade color over chat messages
+        $('head').append('<style type="text/css">.message-out { background-color: transparent !important; }</style>');//===================================ADDED LINE==============================// Removing fade color over chat messages
+        $('head').append('<style type="text/css">.tail { background-color: transparent !important; }</style>');//===================================ADDED LINE==============================// Removing fade color when a message is quoted
 
         //Other changes
         $('head').append('<style type="text/css">.msg { padding-left: 6% !important; padding-right: 6% !important; }</style>');//===================================ADDED LINE==============================// Changes padding of the messages

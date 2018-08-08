@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Fullscreen Whatsapp & Themes
 // @namespace    http://your.homepage/
-// @version      2.7.3
+// @version      2.7.4
 // @description  Dark theme, and bg/theme selector.
 // @author       Wouter Gerarts
 // @match        https://web.whatsapp.com/
@@ -465,8 +465,10 @@ window.getColorTone = function(c, a) {
         $('head').append('<style type="text/css">.tail { background-color: transparent !important; }</style>');//===================================ADDED LINE==============================// Removing fade color when a message is quoted
         $('head').append('<style type="text/css">._3pkkz { background-color: rgba(35, 35, 35, 1) !important; }</style>');//===================================ADDED LINE==============================// Text bar background
         $('head').append('<style type="text/css">._1Plpp { background-color: rgba(45, 45, 45, 1) !important; }</style>');//===================================ADDED LINE==============================// Input bar background
-        $('head').append('<style type="text/css">.selectable-text { background-color: rgba(25, 25, 25, 0) !important; }</style>');//===================================ADDED LINE==============================//
-
+        $('head').append('<style type="text/css">.selectable-text { background-color: rgba(25, 25, 25, 0) !important; }</style>');//===================================ADDED LINE==============================// Left search bar background fix
+        $('head').append('<style type="text/css">._1AwDx._itDl { color: rgba(255, 255, 255, 1) !important; }</style>');//===================================ADDED LINE==============================// Read by text when opening the messageinformation
+        $('head').append('<style type="text/css">._2fq0t { background-color: none !important; }</style>');//===================================ADDED LINE==============================// Background below the messageinformation tab; only visible behind the scrollbar
+        $('head').append('<style type="text/css">._3FAwT { background-color: rgba(255, 255, 255, 0.5) !important; }</style>');//===================================ADDED LINE==============================// Background behind the messageinformation
 
         //Other changes
         $('head').append('<style type="text/css">.msg { padding-left: 6% !important; padding-right: 6% !important; }</style>');//===================================ADDED LINE==============================// Changes padding of the messages

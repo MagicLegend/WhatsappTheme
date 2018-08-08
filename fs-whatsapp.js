@@ -417,6 +417,8 @@ window.getColorTone = function(c, a) {
         $('head').append('<style type="text/css">._3PiNI { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================// Quote bar X
         $('head').append('<style type="text/css">._1aTxu { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================// Message information close X
         $('head').append('<style type="text/css">._16yFM { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================// Profile picture viewer X
+        $('head').append('<style type="text/css">.ory3u { filter: invert(1) !important; }</style>');//===================================ADDED LINE==============================// Smiley
+
 
         // rgba(25, 25, 25, 1) Dark gray
         // rgba(35, 35, 35, 1) Lighter gray
@@ -461,6 +463,10 @@ window.getColorTone = function(c, a) {
         $('head').append('<style type="text/css">.message-in { background-color: transparent !important; }</style>');//===================================ADDED LINE==============================// Removing fade color over chat messages
         $('head').append('<style type="text/css">.message-out { background-color: transparent !important; }</style>');//===================================ADDED LINE==============================// Removing fade color over chat messages
         $('head').append('<style type="text/css">.tail { background-color: transparent !important; }</style>');//===================================ADDED LINE==============================// Removing fade color when a message is quoted
+        $('head').append('<style type="text/css">._3pkkz { background-color: rgba(35, 35, 35, 1) !important; }</style>');//===================================ADDED LINE==============================// Text bar background
+        $('head').append('<style type="text/css">._1Plpp { background-color: rgba(45, 45, 45, 1) !important; }</style>');//===================================ADDED LINE==============================// Input bar background
+        $('head').append('<style type="text/css">.selectable-text { background-color: rgba(25, 25, 25, 0) !important; }</style>');//===================================ADDED LINE==============================//
+
 
         //Other changes
         $('head').append('<style type="text/css">.msg { padding-left: 6% !important; padding-right: 6% !important; }</style>');//===================================ADDED LINE==============================// Changes padding of the messages
